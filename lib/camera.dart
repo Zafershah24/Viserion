@@ -3,7 +3,7 @@ import 'package:camera/camera.dart';
 import 'package:tflite/tflite.dart';
 import 'dart:math' as math;
 
-import 'models.dart';
+import 'constants.dart';
 
 typedef void Callback(List<dynamic> list, int h, int w);
 
@@ -27,7 +27,7 @@ class _CameraState extends State<Camera> {
     super.initState();
 
     if (widget.cameras == null || widget.cameras.length < 1) {
-      print('No camera is found');
+      print('No camera found');
     } else {
       controller = new CameraController(
         widget.cameras[0],

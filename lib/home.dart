@@ -5,7 +5,7 @@ import 'dart:math' as math;
 
 import 'camera.dart';
 import 'bndbox.dart';
-import 'models.dart';
+import 'constants.dart';
 
 class HomePage extends StatefulWidget {
   final List<CameraDescription> cameras;
@@ -81,21 +81,33 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   RaisedButton(
-                    child: const Text(ssd),
+                    padding: const EdgeInsets.all(8.0),
+                    textColor: Colors.white,
+                    color: Colors.blue,
                     onPressed: () => onSelect(ssd),
+                    child: const Text(ssd),
                   ),
                   RaisedButton(
-                    child: const Text(yolo),
+                    padding: const EdgeInsets.all(8.0),
+                    textColor: Colors.white,
+                    color: Colors.redAccent,
                     onPressed: () => onSelect(yolo),
-                  ),
-                  RaisedButton(
+                    child: const Text(yolo),
+                  ),  RaisedButton(
+                    padding: const EdgeInsets.all(8.0),
+                    textColor: Colors.white,
+                    color: Colors.green,
                     child: const Text(mobilenet),
                     onPressed: () => onSelect(mobilenet),
-                  ),
-                  RaisedButton(
+                  ),  RaisedButton(
+                    padding: const EdgeInsets.all(8.0),
+                    textColor: Colors.white,
+                    color: Colors.orange,
                     child: const Text(posenet),
                     onPressed: () => onSelect(posenet),
                   ),
+
+
                 ],
               ),
             )

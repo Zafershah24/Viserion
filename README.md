@@ -1,4 +1,4 @@
-For details: https://medium.com/@shaqian629/real-time-object-detection-in-flutter-b31c7ff9ef96
+
 
 # flutter_realtime_detection
 
@@ -28,7 +28,4 @@ flutter run
 - Pose Estimation 
   - PoseNet
 
-## Previews
-
-![](preview.jpg) 
 
